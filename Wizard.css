@@ -1,0 +1,158 @@
+body {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 0px 0px 8px rgba(255, 0, 0, 0.7);
+  background-image: url('https://m.media-amazon.com/images/I/71YyIjDSjhL._UF1000,1000_QL80_.jpg');
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+p, h2 {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 4px 4px 10px red;
+}
+
+.titleContainer {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.linkBox {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.linkBox a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 15px;
+}
+
+.main-image {
+  max-height: 100%;
+  flex-shrink: 0;
+}
+
+.music-player {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.music-player iframe {
+  border: none;
+  width: 300px;
+  height: 100px;
+}
+
+.transparent-letter {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0px 8px rgba(255, 0, 0, 1);
+}
+p {
+  background-color: rgba(0, 0, 0, 0.2); /* Dark, semi-transparent background */
+  padding: 10px; /* Optional: Adds spacing around the text */
+  border-radius: 5px; /* Optional: Rounded corners for a softer look */
+}
+
+.portfolio-section {
+  padding: 20px;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 20px; /* Add spacing between text and image */
+}
+
+.portfolio-text-container {
+  text-align: center; /* Center text horizontally */
+  width: 100%; /* Ensure the text container spans the full width */
+}
+
+.portfolio-text-container h2 {
+  margin-top: 0; /* Remove extra margin at the top */
+}
+
+.portfolio-image-container {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+}
+
+.portfolio-image-container img {
+  max-width: 100%; /* Scale image responsively */
+  max-height: 800px;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.team-section {
+  padding: 20px;
+  text-align: center; /* Center-align section content */
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for the top row */
+  gap: 20px; /* Space between members */
+  justify-content: center;
+}
+
+.team-member:nth-child(3) {
+  grid-column: span 2; /* Make the third member span two columns */
+  justify-self: center; /* Center the third member horizontally */
+}
+
+.team-image-container img {
+  max-width: 500px; /* Set a maximum width for the images */
+  max-height: 500px; /* Set a maximum height for the images */
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Optional: Makes images circular */
+  margin-bottom: 10px; /* Adds space between the image and text */
+}
+
+.team-text-container h3 {
+  margin: 10px 0 5px; /* Space around the heading */
+}
+
+.team-text-container p {
+  margin: 0; /* Removes default margin for better spacing control */
+}
